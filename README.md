@@ -1,11 +1,11 @@
 # Embedded-Systems-Courses
 Projects of embedded systems in STM32 boards.
 
-Bare metal programming projects involving:
+Bare metal programming projects (mostly in stm32f4xx_drivers archive) involving:
 - Master-slave communication using SPI, UART and I2C.
 - GPIO config. + breadboard to blink internal and external LED.
-- Traffic light control.
 - Interrupts...
+- Traffic light control and other minors projects.
 
 It's based on courses:
 - Master microcontroller with embedded drivers.
