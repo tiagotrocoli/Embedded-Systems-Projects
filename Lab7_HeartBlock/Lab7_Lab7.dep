@@ -1,0 +1,5 @@
+Dependencies for Project 'Lab7', Target 'Lab7': (DO NOT MODIFY !)
+F (.\startup.s)(0x5701D3C8)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\main.c)(0x5DFEABFF)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (TExaS.h)(0x56998CC6)
+F (.\texas.o)(0x56998BBA)()

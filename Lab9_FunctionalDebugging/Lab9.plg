@@ -1,0 +1,18 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Dropbox\EdX\TM4Cware\Lab9_FunctionalDebugging\Lab9.uvproj
+Project File Date:  02/06/2014
+
+<h2>Output:</h2>
+Clean started: Project: 'Lab9'
+   deleting intermediate output files for target 'Lab9'
+Build target 'Lab9'
+assembling startup.s...
+compiling TExaS.c...
+compiling main.c...
+linking...
+Program Size: Code=2888 RO-data=2712 RW-data=56 ZI-data=1440  
+".\Lab9.axf" - 0 Errors, 0 Warning(s).

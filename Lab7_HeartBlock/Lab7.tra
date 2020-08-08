@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'Lab7.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"texas.o"'
+### List of Objects: adding '"main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4 "startup.o" "texas.o" "main.o" C:\Keil\ARM\RV31\Lib\RTX_CM3.LIB --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lab7.map" -o Lab7.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Lab7.axf'
+### ADS-LD Command File: 'Lab7.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Lab7.lnp', Handle=0x000008E8
+### Writing '.lnp' file
+### ADS-LD Command file 'Lab7.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

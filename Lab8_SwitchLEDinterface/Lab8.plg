@@ -1,0 +1,18 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Dropbox\EdX\TM4Cware\Lab8_SwitchLEDinterface\Lab8.uvproj
+Project File Date:  01/21/2014
+
+<h2>Output:</h2>
+Clean started: Project: 'Lab8'
+   deleting intermediate output files for target 'Lab8'
+Build target 'Lab8'
+assembling startup.s...
+compiling SwitchLEDInterface.c...
+compiling TExaS.c...
+linking...
+Program Size: Code=3800 RO-data=6628 RW-data=56 ZI-data=1752  
+".\Lab8.axf" - 0 Errors, 0 Warning(s).
