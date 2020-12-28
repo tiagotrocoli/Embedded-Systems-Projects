@@ -1,0 +1,10 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+main.c:46:5:main	16	static
+main.c:67:6:SystemClock_Config	88	static
+main.c:107:13:MX_GPIO_Init	56	static
+main.c:240:6:led_task_handler	16	static
+main.c:253:6:button_handler	16	static
+main.c:258:6:Interrupt_EXTI_PA0_init	32	static
+main.c:283:6:EXTI0_IRQHandler	8	static
+main.c:294:6:Error_Handler	4	static,ignoring_inline_asm
