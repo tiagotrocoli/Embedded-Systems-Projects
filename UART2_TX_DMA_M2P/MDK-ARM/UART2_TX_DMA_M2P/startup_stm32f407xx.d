@@ -1,0 +1,1 @@
+uart2_tx_dma_m2p\startup_stm32f407xx.o: startup_stm32f407xx.s
