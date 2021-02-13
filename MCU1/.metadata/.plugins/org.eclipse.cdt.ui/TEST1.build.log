@@ -1,0 +1,32 @@
+18:38:02 **** Incremental Build of configuration Debug for project TEST1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../USB_HOST/App -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:350:13: warning: 'MX_USART3_UART_Init' defined but not used [-Wunused-function]
+ static void MX_USART3_UART_Init(void)
+             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:279:13: warning: 'MX_SPI1_Init' defined but not used [-Wunused-function]
+ static void MX_SPI1_Init(void)
+             ^~~~~~~~~~~~
+../Core/Src/main.c:245:13: warning: 'MX_I2S3_Init' defined but not used [-Wunused-function]
+ static void MX_I2S3_Init(void)
+             ^~~~~~~~~~~~
+../Core/Src/main.c:211:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+ static void MX_I2C1_Init(void)
+             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "TEST1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/TEST1/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TEST1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TEST1.elf
+ 
+arm-none-eabi-size   TEST1.elf 
+arm-none-eabi-objdump -h -S  TEST1.elf  > "TEST1.list"
+arm-none-eabi-objcopy  -O binary  TEST1.elf  "TEST1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  17104	     24	   2656	  19784	   4d48	TEST1.elf
+Finished building: default.size.stdout
+ 
+Finished building: TEST1.bin
+ 
+Finished building: TEST1.list
+ 
+
+18:38:03 Build Finished. 0 errors, 4 warnings. (took 1s.441ms)
+

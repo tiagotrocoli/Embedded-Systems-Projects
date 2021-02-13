@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"sleep_on_exit_1\startup_stm32f407xx.o"
+"sleep_on_exit_1\main.o"
+"sleep_on_exit_1\stm32f4xx_it.o"
+"sleep_on_exit_1\stm32f4xx_hal_msp.o"
+"sleep_on_exit_1\data.o"
+"sleep_on_exit_1\stm32f4xx_hal_tim.o"
+"sleep_on_exit_1\stm32f4xx_hal_tim_ex.o"
+"sleep_on_exit_1\stm32f4xx_hal_rcc.o"
+"sleep_on_exit_1\stm32f4xx_hal_rcc_ex.o"
+"sleep_on_exit_1\stm32f4xx_hal_flash.o"
+"sleep_on_exit_1\stm32f4xx_hal_flash_ex.o"
+"sleep_on_exit_1\stm32f4xx_hal_flash_ramfunc.o"
+"sleep_on_exit_1\stm32f4xx_hal_gpio.o"
+"sleep_on_exit_1\stm32f4xx_hal_dma_ex.o"
+"sleep_on_exit_1\stm32f4xx_hal_dma.o"
+"sleep_on_exit_1\stm32f4xx_hal_pwr.o"
+"sleep_on_exit_1\stm32f4xx_hal_pwr_ex.o"
+"sleep_on_exit_1\stm32f4xx_hal_cortex.o"
+"sleep_on_exit_1\stm32f4xx_hal.o"
+"sleep_on_exit_1\stm32f4xx_hal_exti.o"
+"sleep_on_exit_1\stm32f4xx_hal_uart.o"
+"sleep_on_exit_1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Sleep_On_Exit_1\Sleep_On_Exit_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Sleep_On_Exit_1.map" -o Sleep_On_Exit_1\Sleep_On_Exit_1.axf

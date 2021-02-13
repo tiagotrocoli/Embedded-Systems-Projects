@@ -1,0 +1,20 @@
+17:11:28 **** Build of configuration Debug for project time_base_100ms_IT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "time_base_100ms_IT.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/time_base_100ms_IT/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="time_base_100ms_IT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: time_base_100ms_IT.elf
+ 
+arm-none-eabi-objdump -h -S  time_base_100ms_IT.elf  > "time_base_100ms_IT.list"
+arm-none-eabi-objcopy  -O binary  time_base_100ms_IT.elf  "time_base_100ms_IT.bin"
+arm-none-eabi-size   time_base_100ms_IT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3828	     20	   1636	   5484	   156c	time_base_100ms_IT.elf
+Finished building: default.size.stdout
+ 
+Finished building: time_base_100ms_IT.bin
+ 
+Finished building: time_base_100ms_IT.list
+ 
+
+17:11:29 Build Finished. 0 errors, 0 warnings. (took 1s.11ms)
+

@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"uart_pc_it\startup_stm32f407xx.o"
+"uart_pc_it\main.o"
+"uart_pc_it\stm32f4xx_it.o"
+"uart_pc_it\stm32f4xx_hal_msp.o"
+"uart_pc_it\stm32f4xx_hal_tim.o"
+"uart_pc_it\stm32f4xx_hal_tim_ex.o"
+"uart_pc_it\stm32f4xx_hal_uart.o"
+"uart_pc_it\stm32f4xx_hal_rcc.o"
+"uart_pc_it\stm32f4xx_hal_rcc_ex.o"
+"uart_pc_it\stm32f4xx_hal_flash.o"
+"uart_pc_it\stm32f4xx_hal_flash_ex.o"
+"uart_pc_it\stm32f4xx_hal_flash_ramfunc.o"
+"uart_pc_it\stm32f4xx_hal_gpio.o"
+"uart_pc_it\stm32f4xx_hal_dma_ex.o"
+"uart_pc_it\stm32f4xx_hal_dma.o"
+"uart_pc_it\stm32f4xx_hal_pwr.o"
+"uart_pc_it\stm32f4xx_hal_pwr_ex.o"
+"uart_pc_it\stm32f4xx_hal_cortex.o"
+"uart_pc_it\stm32f4xx_hal.o"
+"uart_pc_it\stm32f4xx_hal_exti.o"
+"uart_pc_it\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "UART_PC_IT\UART_PC_IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART_PC_IT.map" -o UART_PC_IT\UART_PC_IT.axf

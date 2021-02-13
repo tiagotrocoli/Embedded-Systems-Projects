@@ -1,0 +1,2 @@
+it.c:12:6:SysTick_Handler	8	static
+it.c:18:6:TIM6_DAC_IRQHandler	8	static

@@ -1,0 +1,23 @@
+23:51:17 **** Incremental Build of configuration Debug for project Testing ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:11:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+arm-none-eabi-gcc -o "Testing.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/Testing/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Testing.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Testing.elf
+ 
+arm-none-eabi-objdump -h -S  Testing.elf  > "Testing.list"
+arm-none-eabi-objcopy  -O binary  Testing.elf  "Testing.bin"
+arm-none-eabi-size   Testing.elf 
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	Testing.elf
+Finished building: default.size.stdout
+Finished building: Testing.bin
+Finished building: Testing.list
+ 
+ 
+ 
+
+23:51:18 Build Finished. 0 errors, 1 warnings. (took 833ms)
+

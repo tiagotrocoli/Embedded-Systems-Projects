@@ -1,0 +1,2 @@
+msp.c:11:6:HAL_MspInit	8	static
+msp.c:26:7:HAL_TIM_IC_MspInit	48	static

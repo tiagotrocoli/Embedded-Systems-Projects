@@ -1,0 +1,20 @@
+13:26:45 **** Build of configuration Debug for project UART2_Example ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART2_Example.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/UART2_Example/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART2_Example.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART2_Example.elf
+ 
+arm-none-eabi-objdump -h -S  UART2_Example.elf  > "UART2_Example.list"
+arm-none-eabi-objcopy  -O binary  UART2_Example.elf  "UART2_Example.bin"
+arm-none-eabi-size   UART2_Example.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6488	     24	   1632	   8144	   1fd0	UART2_Example.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART2_Example.bin
+ 
+Finished building: UART2_Example.list
+ 
+
+13:26:47 Build Finished. 0 errors, 0 warnings. (took 1s.337ms)
+

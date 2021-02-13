@@ -1,0 +1,14 @@
+stm32f4xx_hal_i2s_ex.c:201:19:HAL_I2SEx_TransmitReceive	64	static
+stm32f4xx_hal_i2s_ex.c:419:19:HAL_I2SEx_TransmitReceive_IT	32	static
+stm32f4xx_hal_i2s_ex.c:529:19:HAL_I2SEx_TransmitReceive_DMA	40	static
+stm32f4xx_hal_i2s_ex.c:665:6:HAL_I2SEx_FullDuplex_IRQHandler	40	static
+stm32f4xx_hal_i2s_ex.c:811:13:HAL_I2SEx_TxRxHalfCpltCallback	16	static
+stm32f4xx_hal_i2s_ex.c:826:13:HAL_I2SEx_TxRxCpltCallback	16	static
+stm32f4xx_hal_i2s_ex.c:854:13:I2SEx_TxRxDMAHalfCplt	24	static
+stm32f4xx_hal_i2s_ex.c:872:13:I2SEx_TxRxDMACplt	24	static
+stm32f4xx_hal_i2s_ex.c:942:13:I2SEx_TxRxDMAError	24	static
+stm32f4xx_hal_i2s_ex.c:970:13:I2SEx_TxISR_I2S	16	static
+stm32f4xx_hal_i2s_ex.c:999:13:I2SEx_TxISR_I2SExt	16	static
+stm32f4xx_hal_i2s_ex.c:1028:13:I2SEx_RxISR_I2S	16	static
+stm32f4xx_hal_i2s_ex.c:1057:13:I2SEx_RxISR_I2SExt	16	static
+stm32f4xx_hal_i2s_ex.c:1090:26:I2SEx_FullDuplexWaitFlagStateUntilTimeout	32	static

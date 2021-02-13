@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="D_UART"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="D_UART"/>
+			<item value="system"/>
+			<item value="Reset_Handler"/>
+			<item value="reset"/>
+			<item value="GPIO_PIN_x"/>
+			<item value="CAN_Interrupts"/>
+			<item value="ActiveITs"/>
+			<item value="can"/>
+			<item value="pTxMailbox"/>
+			<item value="CAN_remote_transmission_request"/>
+			<item value="CAN_identifier_type"/>
+			<item value="TIM_OC2_SetConfig"/>
+			<item value="__HAL_TIM_SET_COMPARE"/>
+			<item value="TIM_Output_Compare_Polarity"/>
+			<item value="TIM_Output_Compare_and_PWM_modes"/>
+		</list>
+		<list key="replacehistory">
+			<item value="USART"/>
+			<item value="I2C"/>
+			<item value="SPI"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="966"/>
+		<item key="DIALOG_Y_ORIGIN" value="300"/>
+		<item key="DIALOG_WIDTH" value="348"/>
+		<item key="DIALOG_HEIGHT" value="440"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>

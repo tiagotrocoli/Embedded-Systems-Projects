@@ -1,0 +1,20 @@
+18:53:40 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make all 
+arm-none-eabi-gcc "../src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407G_DISC1 -DDEBUG -c -I"/home/tiago/Documents/MCU_Course/MasteringMCU/Resources/Source_code/Workspace/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -Wall -fstack-usage -MMD -MP -MF"src/011i2c_master_rx_testing.d" -MT"src/011i2c_master_rx_testing.o"  -mfloat-abi=soft -mthumb -o "src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MasteringMCU/Resources/Source_code/Workspace/stm32f4xx_drivers/LinkerScript.ld" -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon  -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+Finished building: stm32f4xx_drivers.list
+ 
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+Finished building: stm32f4xx_drivers.bin
+ 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4012	   1104	   1140	   6256	   1870	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+
+18:53:41 Build Finished. 0 errors, 0 warnings. (took 823ms)
+

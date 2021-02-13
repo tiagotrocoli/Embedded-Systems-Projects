@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tiago Trocoli, Unicamp, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14.1
+Assembler:       Armasm.exe V6.14.1
+Linker/Locator:  ArmLink.exe V6.14.1
+Library Manager: ArmAr.exe V6.14.1
+Hex Converter:   FromElf.exe V6.14.1
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Tiago\Documents\Keil_Workspace\TM3C123_CAN\TM4C123_CAN.uvprojx
+Project File Date:  01/25/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14.1', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(5): warning: unused variable 'var' [-Wunused-variable]
+        int var = 1;
+            ^
+1 warning generated.
+compiling main.c...
+linking...
+Program Size: Code=676 RO-data=636 RW-data=0 ZI-data=608  
+".\Objects\TM4C123_CAN.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CAN Version: 1.3.0
+   * Component: USART Version: 2.4.0
+   * Component: Custom Version: 1.0.0
+   * Component: Custom Version: 1.0.0
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Driver\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS Driver:CAN:1.3.0 (API)
+      Include file:  CMSIS\Driver\Include\Driver_CAN.h
+
+   * Component: ::CMSIS Driver:USART:2.4.0 (API)
+      Include file:  CMSIS\Driver\Include\Driver_USART.h
+
+   * Component: ARM::CMSIS Driver:CAN:Custom:1.0.0
+      Source file:   CMSIS\Driver\DriverTemplates\Driver_CAN.c
+      Include file:  CMSIS\Driver\Include\Driver_CAN.h
+
+   * Component: ARM::CMSIS Driver:USART:Custom:1.0.0
+      Include file:  CMSIS\Driver\Include\Driver_USART.h
+      Source file:   CMSIS\Driver\DriverTemplates\Driver_USART.c
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Include file:  Device\Include\TM4C123\TM4C123.h
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

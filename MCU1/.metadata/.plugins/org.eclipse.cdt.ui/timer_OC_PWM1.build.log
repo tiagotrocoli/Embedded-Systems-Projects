@@ -1,0 +1,20 @@
+20:34:37 **** Incremental Build of configuration Debug for project timer_OC_PWM1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "timer_OC_PWM1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/timer_OC_PWM1/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="timer_OC_PWM1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: timer_OC_PWM1.elf
+ 
+arm-none-eabi-objdump -h -S  timer_OC_PWM1.elf  > "timer_OC_PWM1.list"
+arm-none-eabi-objcopy  -O binary  timer_OC_PWM1.elf  "timer_OC_PWM1.bin"
+arm-none-eabi-size   timer_OC_PWM1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11376	     36	   1700	  13112	   3338	timer_OC_PWM1.elf
+Finished building: default.size.stdout
+Finished building: timer_OC_PWM1.bin
+ 
+ 
+Finished building: timer_OC_PWM1.list
+ 
+
+20:34:38 Build Finished. 0 errors, 0 warnings. (took 1s.283ms)
+

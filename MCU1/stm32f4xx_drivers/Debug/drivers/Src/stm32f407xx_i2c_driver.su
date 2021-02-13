@@ -1,0 +1,13 @@
+stm32f407xx_i2c_driver.c:16:13:I2C_generateStartCondition	16	static
+stm32f407xx_i2c_driver.c:20:13:I2C_ExecuteAddressPhaseWrite	16	static
+stm32f407xx_i2c_driver.c:26:13:I2C_ExecuteAddressPhaseRead	16	static
+stm32f407xx_i2c_driver.c:32:13:I2C_ClearADDRFlag	24	static
+stm32f407xx_i2c_driver.c:38:13:I2C_GenerateStopCondition	16	static
+stm32f407xx_i2c_driver.c:42:6:I2C_Init	24	static
+stm32f407xx_i2c_driver.c:172:6:I2C_PeripheralControl	16	static
+stm32f407xx_i2c_driver.c:181:6:I2C_PeriClockControl	16	static
+stm32f407xx_i2c_driver.c:197:6:I2C_DeInit	16	static
+stm32f407xx_i2c_driver.c:207:9:I2C_GetFlagStatus	16	static
+stm32f407xx_i2c_driver.c:219:6:I2C_MasterSendData	24	static
+stm32f407xx_i2c_driver.c:261:6:I2C_MasterReceiveData	32	static
+stm32f407xx_i2c_driver.c:335:6:I2C_ManageAcking	16	static

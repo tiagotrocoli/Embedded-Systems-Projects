@@ -1,0 +1,4 @@
+stm32f4xx_hal_flash_ramfunc.c:112:30:HAL_FLASHEx_StopFlashInterfaceClk	16	static
+stm32f4xx_hal_flash_ramfunc.c:129:30:HAL_FLASHEx_StartFlashInterfaceClk	16	static
+stm32f4xx_hal_flash_ramfunc.c:146:30:HAL_FLASHEx_EnableFlashSleepMode	16	static
+stm32f4xx_hal_flash_ramfunc.c:163:30:HAL_FLASHEx_DisableFlashSleepMode	16	static

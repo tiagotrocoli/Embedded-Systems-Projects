@@ -1,0 +1,23 @@
+13:11:18 **** Incremental Build of configuration Debug for project 002SampleApp ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:11:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+arm-none-eabi-gcc -o "002SampleApp.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/tiago/Documents/MCU_Course/MCU1/002SampleApp/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002SampleApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002SampleApp.elf
+ 
+arm-none-eabi-objdump -h -S  002SampleApp.elf  > "002SampleApp.list"
+arm-none-eabi-objcopy  -O binary  002SampleApp.elf  "002SampleApp.bin"
+arm-none-eabi-size   002SampleApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5792	    176	   1584	   7552	   1d80	002SampleApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002SampleApp.bin
+ 
+Finished building: 002SampleApp.list
+ 
+
+13:11:19 Build Finished. 0 errors, 1 warnings. (took 1s.24ms)
+

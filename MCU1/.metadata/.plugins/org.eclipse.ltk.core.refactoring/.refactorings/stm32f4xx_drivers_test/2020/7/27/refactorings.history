@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stm32f4xx_drivers/Src/008spi_cmd_handling&apos; to &apos;008spi_cmd_handling.c&apos;" description="Rename resource &apos;008spi_cmd_handling&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/008spi_cmd_handling" name="008spi_cmd_handling.c" stamp="1593814393751" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+00:48:47 **** Clean-only build of configuration Debug for project 001HelloWorld ****
+make -j4 clean 
+make: *** No rule to make target 'clean'.  Stop.
+"make -j4 clean" terminated with exit code 2. Build might be incomplete.
+
+00:48:48 Build Failed. 1 errors, 0 warnings. (took 726ms)
+

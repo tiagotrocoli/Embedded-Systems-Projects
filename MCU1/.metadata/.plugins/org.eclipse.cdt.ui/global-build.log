@@ -1,0 +1,63 @@
+22:12:50 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:16:38 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:21:51 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:27:19 **** Incremental Build of configuration Debug for project User_app_STM32F4xx ****
+make -j4 all 
+arm-none-eabi-size   User_app_STM32F4xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8648	     48	   1640	  10336	   2860	User_app_STM32F4xx.elf
+Finished building: default.size.stdout
+ 
+22:27:33 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:29:06 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:29:24 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 
+22:30:26 **** Incremental Build of configuration Debug for project User_app_STM32F4xx ****
+make -j4 all 
+arm-none-eabi-size   User_app_STM32F4xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8648	     48	   1640	  10336	   2860	User_app_STM32F4xx.elf
+Finished building: default.size.stdout
+ 
+22:31:07 **** Incremental Build of configuration Debug for project bootloader_STM32F407xx ****
+make -j4 all 
+arm-none-eabi-size   bootloader_STM32F407xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11452	    120	   1720	  13292	   33ec	bootloader_STM32F407xx.elf
+Finished building: default.size.stdout
+ 

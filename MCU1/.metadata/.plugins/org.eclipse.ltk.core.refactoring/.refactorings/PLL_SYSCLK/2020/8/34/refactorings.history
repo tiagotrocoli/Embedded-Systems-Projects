@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PLL_SYSCLK/HSE_SYSCLK_8Mhz.ioc&apos; to &apos;PLL_SYSCLK.ioc&apos;" description="Rename resource &apos;HSE_SYSCLK_8Mhz.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HSE_SYSCLK_8Mhz.ioc" name="PLL_SYSCLK.ioc" stamp="1597883105560" updateReferences="true"/>
+</session>

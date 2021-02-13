@@ -1,0 +1,5 @@
+main.c:39:5:main	24	static
+main.c:56:9:convert_to_capital	16	static
+main.c:65:6:SystemClockConfig	4	static
+main.c:69:6:UART2_Init	8	static
+main.c:84:6:Error_handler	4	static

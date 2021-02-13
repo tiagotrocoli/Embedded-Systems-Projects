@@ -1,0 +1,10 @@
+22:30:26 **** Incremental Build of configuration Debug for project User_app_STM32F4xx ****
+make -j4 all 
+arm-none-eabi-size   User_app_STM32F4xx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8648	     48	   1640	  10336	   2860	User_app_STM32F4xx.elf
+Finished building: default.size.stdout
+ 
+
+22:30:26 Build Finished. 0 errors, 0 warnings. (took 679ms)
+

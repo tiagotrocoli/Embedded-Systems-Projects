@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;time_base_100ms_IT/time_base_100ms.ioc&apos; to &apos;time_base_100ms_IT.ioc&apos;" description="Rename resource &apos;time_base_100ms.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="time_base_100ms.ioc" name="time_base_100ms_IT.ioc" stamp="1599057499120" updateReferences="true"/>
+</session>
