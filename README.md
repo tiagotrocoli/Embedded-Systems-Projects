@@ -1,5 +1,5 @@
 # Embedded-Systems-Courses
-Projects and mini-projects of embedded systems using STM32F407xx or TM4C123.
+Projects and small projects of embedded systems using STM32F407xx or TM4C123.
 
 Bare metal programming projects (mostly in stm32f4xx_drivers archive) involving:
 - Master-slave communication using SPI, UART and I2C.
