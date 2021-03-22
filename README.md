@@ -1,5 +1,5 @@
 # Embedded-Systems-Courses
-Projects of embedded systems in STM32 or TM4C123.
+Projects and mini-projects of embedded systems using STM32F407xx or TM4C123.
 
 Bare metal programming projects (mostly in stm32f4xx_drivers archive) involving:
 - Master-slave communication using SPI, UART and I2C.
@@ -10,6 +10,11 @@ Bare metal programming projects (mostly in stm32f4xx_drivers archive) involving:
 - Bootloader
 - Measurement of distance using ultrasonic sensor
 - DMA
+- Development of drivers using Design Patterns (STM32F407_DesignPatterns)
+
+In Keil_Workspace some mini-projects using TM4C123xx:
+- Measurement of the frequency and period of signal coming from Arduino to TM4C123.
+- Other mini-projects using servo-motors, TIMERS, interrupts, UART, SPI and PWM.
 
 FreeRTOS projects:
 - Multitasking projects that use FreeRTOS API, CMSIS and peripheral of STM32F407xx boards.
