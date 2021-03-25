@@ -36,3 +36,85 @@ DevicePtr createDevice(const char* name, const Address *address){
 	
 	return device;
 }
+
+void turnOnDevice(DevicePtr device){
+	
+	/* 1. COnfigure device as an output device */
+	uint16_t _pin = (uint16_t) device->address.Pin;
+	device->address.Port->MODER &= ~(0x3U << (2*_pin));
+	device->address.Port->MODER |= (0x1 << (2*_pin) );
+	
+	/* 2. Turn on device */
+	device->address.Port->ODR |= (1U << _pin);
+	printf("%s is on \n\r", device->name);
+	
+	
+}
+
+void turnOffDevice(DevicePtr device){
+	
+	uint16_t _pin = (uint16_t) device->address.Pin;
+	
+	/* Turn off device */
+	device->address.Port->ODR &= ~(1U << _pin);
+	printf("%s is off \n\r", device->name);
+	
+	
+}
+
+void toggleDevice(DevicePtr device){
+	
+	uint16_t _pin = (uint16_t) device->address.Pin;
+	
+	/* Turn off device */
+	device->address.Port->ODR ^= (1U << _pin);
+	printf("%s has toggled \n\r", device->name);
+	
+	
+}
+
+State_T readDevice(DevicePtr device){
+	
+	State_T bitStatus;
+	
+	/* 1. COnfigure device as an input device */
+	uint16_t _pin = (uint16_t) device->address.Pin;
+	device->address.Port->MODER &= ~(0x3U << (2*_pin));
+	device->address.Port->MODER |= (0x0U << (2*_pin) );
+	
+	// read device
+	if(device->address.Port->IDR & (1U << _pin) ){
+		bitStatus = 1;
+	}else{
+		bitStatus = 0;	
+	}
+	
+	return bitStatus;
+}
+
+void destroyDevice(DevicePtr device){
+	
+	printf("*** %s destroyed ***\n\r", device->name);
+	free(device);
+	
+}
+
+void displayDeviceInfo(DevicePtr device){
+	
+	const char* type;
+	uint16_t _pin = (uint16_t) device->address.Pin;
+
+	if( (device->address.Port->MODER & (1U << 2*_pin)) == 1 ){
+		type = "Output device";
+	}else{
+		type = "input device";
+	}
+	
+	printf("**********************************************\n\r");
+	printf("Device name: %s\n\r", device->name);
+	printf("Device type: %s\n\r", type);
+	printf("The device uuid is %d\n\r", device->uuid);
+	printf("**********************************************\n\r");
+	
+	
+}

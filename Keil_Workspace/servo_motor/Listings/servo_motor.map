@@ -4,17 +4,18 @@ Component: ARM Compiler 6.14.1 Tool: armlink [5db06d00]
 
 Section Cross References
 
-    main.o(.text.main) refers to main.o(.text.Servo_90_Degree) for Servo_90_Degree
+    main.o(.text.main) refers to main.o(.text.Servo_0_Degree) for Servo_0_Degree
     main.o(.text.main) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
+    main.o(.text.main) refers to main.o(.text.Servo_90_Degree) for Servo_90_Degree
     main.o(.text.main) refers to main.o(.text.Servo_180_Degree) for Servo_180_Degree
     main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
-    main.o(.text.Servo_90_Degree) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
-    main.o(.ARM.exidx.text.Servo_90_Degree) refers to main.o(.text.Servo_90_Degree) for [Anonymous Symbol]
-    main.o(.ARM.exidx.text.Delay_MicroSecond) refers to main.o(.text.Delay_MicroSecond) for [Anonymous Symbol]
-    main.o(.text.Servo_180_Degree) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
-    main.o(.ARM.exidx.text.Servo_180_Degree) refers to main.o(.text.Servo_180_Degree) for [Anonymous Symbol]
     main.o(.text.Servo_0_Degree) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
     main.o(.ARM.exidx.text.Servo_0_Degree) refers to main.o(.text.Servo_0_Degree) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.Delay_MicroSecond) refers to main.o(.text.Delay_MicroSecond) for [Anonymous Symbol]
+    main.o(.text.Servo_90_Degree) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
+    main.o(.ARM.exidx.text.Servo_90_Degree) refers to main.o(.text.Servo_90_Degree) for [Anonymous Symbol]
+    main.o(.text.Servo_180_Degree) refers to main.o(.text.Delay_MicroSecond) for Delay_MicroSecond
+    main.o(.ARM.exidx.text.Servo_180_Degree) refers to main.o(.text.Servo_180_Degree) for [Anonymous Symbol]
     startup_tm4c123.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_tm4c123.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_tm4c123.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
@@ -144,11 +145,10 @@ Removing Unused input sections from the image.
 
     Removing main.o(.text), (0 bytes).
     Removing main.o(.ARM.exidx.text.main), (8 bytes).
-    Removing main.o(.ARM.exidx.text.Servo_90_Degree), (8 bytes).
-    Removing main.o(.ARM.exidx.text.Delay_MicroSecond), (8 bytes).
-    Removing main.o(.ARM.exidx.text.Servo_180_Degree), (8 bytes).
-    Removing main.o(.text.Servo_0_Degree), (50 bytes).
     Removing main.o(.ARM.exidx.text.Servo_0_Degree), (8 bytes).
+    Removing main.o(.ARM.exidx.text.Delay_MicroSecond), (8 bytes).
+    Removing main.o(.ARM.exidx.text.Servo_90_Degree), (8 bytes).
+    Removing main.o(.ARM.exidx.text.Servo_180_Degree), (8 bytes).
     Removing main.o(.ARM.use_no_argv), (4 bytes).
     Removing system_tm4c123.o(.text), (0 bytes).
     Removing system_tm4c123.o(.text.SystemCoreClockUpdate), (148 bytes).
@@ -159,7 +159,7 @@ Removing Unused input sections from the image.
     Removing system_tm4c123.o(.data.SystemCoreClock), (4 bytes).
     Removing system_tm4c123.o(.rodata..Lswitch.table.getOscClk), (92 bytes).
 
-16 unused section(s) (total 418 bytes) removed from the image.
+15 unused section(s) (total 368 bytes) removed from the image.
 
 ==============================================================================
 
@@ -278,12 +278,13 @@ Image Symbol Table
     .text                                    0x0000047c   Section        2  use_no_semi.o(.text)
     .text                                    0x0000047e   Section        0  indicate_semi.o(.text)
     [Anonymous Symbol]                       0x00000480   Section        0  main.o(.text.Delay_MicroSecond)
-    [Anonymous Symbol]                       0x000004ec   Section        0  main.o(.text.Servo_180_Degree)
-    [Anonymous Symbol]                       0x00000520   Section        0  main.o(.text.Servo_90_Degree)
-    [Anonymous Symbol]                       0x00000554   Section        0  system_tm4c123.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x000005c4   Section        0  main.o(.text.main)
-    $v0                                      0x0000060e   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x0000060e   Section       26  fpinit.o(x$fpl$fpinit)
+    [Anonymous Symbol]                       0x000004ec   Section        0  main.o(.text.Servo_0_Degree)
+    [Anonymous Symbol]                       0x00000520   Section        0  main.o(.text.Servo_180_Degree)
+    [Anonymous Symbol]                       0x00000554   Section        0  main.o(.text.Servo_90_Degree)
+    [Anonymous Symbol]                       0x00000588   Section        0  system_tm4c123.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x000005f8   Section        0  main.o(.text.main)
+    $v0                                      0x0000064c   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x0000064c   Section       26  fpinit.o(x$fpl$fpinit)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
     Heap_Mem                                 0x20000060   Data           0  startup_tm4c123.o(HEAP)
     Stack_Mem                                0x20000060   Data         512  startup_tm4c123.o(STACK)
@@ -506,15 +507,16 @@ Image Symbol Table
     __use_no_semihosting_swi                 0x0000047d   Thumb Code     2  use_no_semi.o(.text)
     __semihosting_library_function           0x0000047f   Thumb Code     0  indicate_semi.o(.text)
     Delay_MicroSecond                        0x00000481   Thumb Code   106  main.o(.text.Delay_MicroSecond)
-    Servo_180_Degree                         0x000004ed   Thumb Code    50  main.o(.text.Servo_180_Degree)
-    Servo_90_Degree                          0x00000521   Thumb Code    50  main.o(.text.Servo_90_Degree)
-    SystemInit                               0x00000555   Thumb Code   112  system_tm4c123.o(.text.SystemInit)
-    main                                     0x000005c5   Thumb Code    74  main.o(.text.main)
-    _fp_init                                 0x0000060f   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00000627   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00000627   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x00000628   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000638   Number         0  anon$$obj.o(Region$$Table)
+    Servo_0_Degree                           0x000004ed   Thumb Code    50  main.o(.text.Servo_0_Degree)
+    Servo_180_Degree                         0x00000521   Thumb Code    50  main.o(.text.Servo_180_Degree)
+    Servo_90_Degree                          0x00000555   Thumb Code    50  main.o(.text.Servo_90_Degree)
+    SystemInit                               0x00000589   Thumb Code   112  system_tm4c123.o(.text.SystemInit)
+    main                                     0x000005f9   Thumb Code    84  main.o(.text.main)
+    _fp_init                                 0x0000064d   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x00000665   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x00000665   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    Region$$Table$$Base                      0x00000668   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000678   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
 
@@ -526,9 +528,9 @@ Memory Map of the image
 
   Image Entry point : 0x000002f1
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00000638, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000678, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000638, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000678, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -590,22 +592,25 @@ Memory Map of the image
     0x0000047e   0x0000047e   0x00000002   PAD
     0x00000480   0x00000480   0x0000006a   Code   RO            6    .text.Delay_MicroSecond  main.o
     0x000004ea   0x000004ea   0x00000002   PAD
-    0x000004ec   0x000004ec   0x00000032   Code   RO            8    .text.Servo_180_Degree  main.o
+    0x000004ec   0x000004ec   0x00000032   Code   RO            4    .text.Servo_0_Degree  main.o
     0x0000051e   0x0000051e   0x00000002   PAD
-    0x00000520   0x00000520   0x00000032   Code   RO            4    .text.Servo_90_Degree  main.o
+    0x00000520   0x00000520   0x00000032   Code   RO           10    .text.Servo_180_Degree  main.o
     0x00000552   0x00000552   0x00000002   PAD
-    0x00000554   0x00000554   0x00000070   Code   RO           34    .text.SystemInit    system_tm4c123.o
-    0x000005c4   0x000005c4   0x0000004a   Code   RO            2    .text.main          main.o
-    0x0000060e   0x0000060e   0x0000001a   Code   RO          136    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00000628   0x00000628   0x00000010   Data   RO          211    Region$$Table       anon$$obj.o
+    0x00000554   0x00000554   0x00000032   Code   RO            8    .text.Servo_90_Degree  main.o
+    0x00000586   0x00000586   0x00000002   PAD
+    0x00000588   0x00000588   0x00000070   Code   RO           34    .text.SystemInit    system_tm4c123.o
+    0x000005f8   0x000005f8   0x00000054   Code   RO            2    .text.main          main.o
+    0x0000064c   0x0000064c   0x0000001a   Code   RO          136    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x00000666   0x00000666   0x00000002   PAD
+    0x00000668   0x00000668   0x00000010   Data   RO          211    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00000638, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00000678, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x00000638, Size: 0x00000260, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x00000678, Size: 0x00000260, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -621,14 +626,14 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       280          0          0          0          0       6803   main.o
+       340          0          0          0          0       6805   main.o
        276         24        620          0        512       5504   startup_tm4c123.o
        112          0          0          0          0       6566   system_tm4c123.o
 
     ----------------------------------------------------------------------
-       674         24        636          0        512      18873   Object Totals
+       736         24        636          0        512      18875   Object Totals
          0          0         16          0          0          0   (incl. Generated)
-         6          0          0          0          0          0   (incl. Padding)
+         8          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -656,8 +661,8 @@ Image component sizes
         26          0          0          0          0        116   fpinit.o
 
     ----------------------------------------------------------------------
-       282         16          0          0         96        700   Library Totals
-         6          0          0          0          0          0   (incl. Padding)
+       284         16          0          0         96        700   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -667,7 +672,7 @@ Image component sizes
         26          0          0          0          0        116   fz_wm.l
 
     ----------------------------------------------------------------------
-       282         16          0          0         96        700   Library Totals
+       284         16          0          0         96        700   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -676,15 +681,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-       956         40        636          0        608      19333   Grand Totals
-       956         40        636          0        608      19333   ELF Image Totals
-       956         40        636          0          0          0   ROM Totals
+      1020         40        636          0        608      19335   Grand Totals
+      1020         40        636          0        608      19335   ELF Image Totals
+      1020         40        636          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1592 (   1.55kB)
+    Total RO  Size (Code + RO Data)                 1656 (   1.62kB)
     Total RW  Size (RW Data + ZI Data)               608 (   0.59kB)
-    Total ROM Size (Code + RO Data + RW Data)       1592 (   1.55kB)
+    Total ROM Size (Code + RO Data + RW Data)       1656 (   1.62kB)
 
 ==============================================================================
 
