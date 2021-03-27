@@ -1,0 +1,359 @@
+Dependencies for Project 'Project_2', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\main.c)(0x605F0CE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/main.o -MD)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c)(0x5D8861F4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/clib_arm.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\semphr.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\queue.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Source\cmsis_os1.c)(0x5D8861F4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/cmsis_os1.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include1\cmsis_os.h)(0x5D8861F4)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5E83693E)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c)(0x5EAA8612)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/cmsis_os2.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5E83693E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\os_tick.h)(0x5E83693E)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\event_groups.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\timers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\semphr.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\queue.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h)(0x5EAA8612)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_os2.h)(0x5EAA8612)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Source\os_systick.c)(0x5D8861F4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/os_systick.o -MD)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\os_tick.h)(0x5E83693E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+F (RTE\Device\STM32F407VGTx\startup_stm32f407xx.s)(0x5F6B3446)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 534" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F407xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f407xx.o)
+F (RTE\Device\STM32F407VGTx\system_stm32f4xx.c)(0x5F6B3446)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/system_stm32f4xx.o -MD)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c)(0x5EAA8612)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/freertos_evr.o -MD)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\semphr.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\queue.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\event_groups.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\timers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\stream_buffer.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\event_groups.c)(0x5EAA8618)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/event_groups.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\timers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\event_groups.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\list.c)(0x5EAA8618)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/list.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\port.c)(0x5EAA8618)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/port.o -MD)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\MemMang\heap_4.c)(0x5EAA861A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/heap_4.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\queue.c)(0x5EAA861A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/queue.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\queue.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\tasks.c)(0x5EAA861A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/tasks.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\timers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\stack_macros.h)(0x5EAA8618)
+F (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\timers.c)(0x5EAA861A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/CMSIS/RTOS2/FreeRTOS/Include1-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.3.1/Source/portable/GCC/ARM_CM4F-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include-IC:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_-o ./objects/timers.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA8618)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60360718)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60360718)
+I (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)
+I (RTE\_Target_1\RTE_Components.h)(0x605F093A)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE197C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x60360714)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6B3446)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8861F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60360718)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\projdefs.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\portable.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\deprecated_definitions.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F\portmacro.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\mpu_wrappers.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\queue.h)(0x5EAA8618)
+I (C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\timers.h)(0x5EAA8618)
+F (RTE\RTOS\FreeRTOSConfig.h)(0x5D8861F4)()
