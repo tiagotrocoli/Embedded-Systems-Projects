@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"test_2\startup_stm32f407xx.o"
+"test_2\main.o"
+"test_2\stm32f4xx_it.o"
+"test_2\stm32f4xx_hal_msp.o"
+"test_2\stm32f4xx_hal_tim.o"
+"test_2\stm32f4xx_hal_tim_ex.o"
+"test_2\stm32f4xx_hal_uart.o"
+"test_2\stm32f4xx_hal_rcc.o"
+"test_2\stm32f4xx_hal_rcc_ex.o"
+"test_2\stm32f4xx_hal_flash.o"
+"test_2\stm32f4xx_hal_flash_ex.o"
+"test_2\stm32f4xx_hal_flash_ramfunc.o"
+"test_2\stm32f4xx_hal_gpio.o"
+"test_2\stm32f4xx_hal_dma_ex.o"
+"test_2\stm32f4xx_hal_dma.o"
+"test_2\stm32f4xx_hal_pwr.o"
+"test_2\stm32f4xx_hal_pwr_ex.o"
+"test_2\stm32f4xx_hal_cortex.o"
+"test_2\stm32f4xx_hal.o"
+"test_2\stm32f4xx_hal_exti.o"
+"test_2\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Test_2\Test_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Test_2.map" -o Test_2\Test_2.axf

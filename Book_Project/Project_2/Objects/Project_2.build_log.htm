@@ -27,7 +27,29 @@ Project File Date:  03/27/2021
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-".\Objects\Project_2.axf" - 0 Error(s), 0 Warning(s).
+main.c(34): warning: unused parameter 'pvParam' [-Wunused-parameter]
+void task2(void *pvParam){
+                 ^
+main.c(34): warning: function 'task2' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void task2(void *pvParam){
+                         ^
+main.c(46): warning: unused parameter 'pvParam' [-Wunused-parameter]
+void task1(void *pvParam){
+                 ^
+main.c(46): warning: function 'task1' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void task1(void *pvParam){
+                         ^
+main.c(32): warning: no previous extern declaration for non-static variable 'flag' [-Wmissing-variable-declarations]
+int flag;
+    ^
+main.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int flag;
+^
+5 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=7992 RO-data=424 RW-data=8 ZI-data=12800  
+".\Objects\Project_2.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -79,19 +101,19 @@ Package Vendor: Keil
       Include file:  CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.3.1
+      Source file:   Source\queue.c
       Include file:  Source\include\FreeRTOS.h
-      Include file:  Source\include\queue.h
       Include file:  Source\include\semphr.h
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
       Source file:   Source\list.c
       Source file:   Source\tasks.c
-      Source file:   Source\queue.c
-      Include file:  Source\include\task.h
       Source file:   Source\portable\GCC\ARM_CM4F\port.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Event Groups:10.3.1
-      Include file:  Source\include\event_groups.h
       Source file:   Source\event_groups.c
+      Include file:  Source\include\event_groups.h
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.3.1
       Source file:   Source\portable\MemMang\heap_4.c
@@ -103,22 +125,22 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: ARM::CMSIS:RTOS:FreeRTOS:10.3.1
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os1.c
       Include file:  CMSIS\RTOS2\FreeRTOS\Include1\cmsis_os.h
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os1.c
 
    * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:10.3.1
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
-      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h
 
    * Component: Keil::Device:Startup:2.6.3
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

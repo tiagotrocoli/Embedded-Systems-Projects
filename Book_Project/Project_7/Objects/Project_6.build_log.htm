@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tiago Trocoli, Unicamp, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Tiago\Documents\GitHub\Embedded-Systems-Projects\Book_Project\Project_6\Project_6.uvprojx
+Project File Date:  03/29/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(10): warning: no previous extern declaration for non-static variable 'taskHandle_1' [-Wmissing-variable-declarations]
+TaskHandle_t taskHandle_1 = NULL;
+             ^
+main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TaskHandle_t taskHandle_1 = NULL;
+^
+main.c(11): warning: no previous extern declaration for non-static variable 'taskHandle_2' [-Wmissing-variable-declarations]
+TaskHandle_t taskHandle_2 = NULL;
+             ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TaskHandle_t taskHandle_2 = NULL;
+^
+main.c(32): warning: unused parameter 'param' [-Wunused-parameter]
+void task1(void *param){
+                 ^
+main.c(32): warning: function 'task1' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void task1(void *param){
+                       ^
+main.c(47): warning: unused parameter 'param' [-Wunused-parameter]
+void task2(void *param){
+                 ^
+main.c(47): warning: function 'task2' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void task2(void *param){
+                       ^
+main.c(71): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(67): warning: function 'error' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void error(void){
+                ^
+8 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=8220 RO-data=424 RW-data=8 ZI-data=12808  
+".\Objects\Project_6.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS Version: 1.0.0
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.3.1.pack
+                ARM.CMSIS-FreeRTOS.10.3.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: CMSIS RTOS2 Version: 10.3.1
+   * Component: Core Variant: Cortex-M Version: 10.3.1
+   * Component: Event Groups Version: 10.3.1
+   * Component: Heap Variant: Heap_4 Version: 10.3.1
+   * Component: Timers Version: 10.3.1
+   * Component: FreeRTOS Version: 10.3.1
+   * Component: FreeRTOS Variant: Cortex-M Version: 10.3.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_Target_1
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include1
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\GCC\ARM_CM4F
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS:1.0.0 (API)
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:10.3.1
+      Include file:  CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.3.1
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\semphr.h
+      Source file:   Source\list.c
+      Source file:   Source\tasks.c
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\task.h
+      Source file:   Source\queue.c
+      Source file:   Source\portable\GCC\ARM_CM4F\port.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.3.1
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.3.1
+      Source file:   Source\portable\MemMang\heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.3.1
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:RTOS:FreeRTOS:10.3.1
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include1\cmsis_os.h
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os1.c
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:10.3.1
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
