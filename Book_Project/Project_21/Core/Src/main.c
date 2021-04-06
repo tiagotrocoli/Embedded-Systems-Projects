@@ -20,12 +20,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "task.h"
 #include <string.h>
 #include <stdio.h>
 
 #define WAIT		1
 #define ALLOW 	0
-#define LENGHT_xUARTQueue	1
+
+#define LENGHT_xUARTQueue		1
+#define LENGHT_xBuzzerQueue	1
 
 UART_HandleTypeDef huart4;
 TaskHandle_t task1 = NULL;
@@ -33,8 +36,9 @@ TaskHandle_t task2 = NULL;
 TaskHandle_t task3 = NULL;
 TaskHandle_t task4 = NULL;
 QueueHandle_t xUARTQueue;
+QueueHandle_t xBuzzerQueue;
 
-uint8_t flag_uartController = WAIT;
+uint8_t flag_uartController = ALLOW;
 
 /* USER CODE BEGIN PV */
 
@@ -60,8 +64,10 @@ int main(void){
  
 	xTaskCreate(mainTask, "Main_Task", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task1);
 	xTaskCreate(uartController, "uartController", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task2);
+	xTaskCreate(buzzerController, "buzzerController", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task3);
 	
-	xUARTQueue = xQueueCreate(LENGHT_xUARTQueue, sizeof(uint8_t));
+	xUARTQueue   = xQueueCreate(LENGHT_xUARTQueue, sizeof(uint8_t));
+	xBuzzerQueue = xQueueCreate(LENGHT_xBuzzerQueue, sizeof(uint8_t));
 	
   xPortStartScheduler();
 	
@@ -201,54 +207,93 @@ void mainTask(void *param){
 	double celcius;
 	char data[30];
 	uint8_t SetPoint = 30;
+	uint8_t buzzState = 0;
 	
 	init_ADC1();
 	
 	while(1){
-		// block 
-		flag_uartController = WAIT;
+		
+		// wait uartController to receive setPoint
+		xQueueReceive(xUARTQueue, &SetPoint, portMAX_DELAY);
 		
 		// get the CPU temperature and send to PC
 		celcius = getValueFromADC1();
-		sprintf(data, "\r\nTemperature: %f\n\r", celcius);
+		sprintf(data, "\r\nTemperature: %f", celcius);
 		send_UART(data);
 		
-		// get the new setPoint from uartController
-		if (xQueueReceive(xUARTQueue, &SetPoint, pdMS_TO_TICKS(500)) == pdTRUE){
-			// send the new setPoint to PC
-			SetPoint = SetPoint - '0';
-			sprintf(data, "\r\nSetPoint: %d\n\r", SetPoint);
-			send_UART(data);
+		if (SetPoint > celcius){
+			buzzState = 1;
+		}else{
+			buzzState = 0;
 		}
+		// sent buzzer state to buzzerController
+		xQueueSend(xBuzzerQueue, &buzzState, portMAX_DELAY);
+		flag_uartController = WAIT;
 		
-		// allow uartController to run
-		flag_uartController = ALLOW;
-		
-		// block for 1s
-		vTaskDelay( pdMS_TO_TICKS(1000) );
 	}
 	
 }
-
 
 void uartController(void *param){
 	
-	uint8_t SetPoint;
+	unsigned char char_setPoint[2];
+	uint8_t int_setPoint;
 	
 	while(1){
-		// wait until mainTask allow it to run
-		while(flag_uartController == WAIT);
-			
-		// wait the user to provide temperature setPoint (can change delay to not wait user...)
-		send_UART("\r\nEnter Temperature SetPoint (degrees): ");
-		HAL_UART_Receive(&huart4, &SetPoint,sizeof(uint8_t),portMAX_DELAY );
-		send_UART("\r\nTemperature SetPoint changed...");
 		
-		// send the new setPoint to mainTask
-		xQueueSend(xUARTQueue, &SetPoint, 1000);
+		// if it is allow to run...
+		if(flag_uartController == ALLOW){
+		
+			// wait the user to provide temperature setPoint (can change delay to not wait user...)
+			send_UART("\r\nEnter Temperature SetPoint (degrees): ");
+			HAL_UART_Receive(&huart4, char_setPoint,2,portMAX_DELAY );
+			send_UART("\r\nTemperature SetPoint changed...");
+			
+			// convert char into int
+			int_setPoint = (uint8_t) ( 10*(char_setPoint[0] - '0') + (char_setPoint[1] - '0') );
+			
+			// send the new setPoint to mainTask
+			xQueueSend(xUARTQueue, &int_setPoint, portMAX_DELAY);
+			// force changing the task 
+			taskYIELD();
+		}
+		// otherwise, change to task buzzerController
+		else{
+			taskYIELD();
+		}
 	}
 	
 }
+
+
+void buzzerController(void *param){
+	
+	uint8_t buzzState;
+	
+	// set PA8 as output to buzzer
+	GPIOA->MODER |= (0x1 << 16);
+	// PA8 is set to LOW at the beggining
+	GPIOA->ODR &= ~(1U << 8);
+	
+	while(1){
+		//send_UART("\n\rHello from Task3 1");
+		// wait to receive buzzer state from mainTask
+		xQueueReceive(xBuzzerQueue,&buzzState,portMAX_DELAY);
+		// set buzzer state (PA8) state
+		if(buzzState == 1){
+			GPIOA->ODR |= (buzzState << 8);
+		}else{
+			buzzState = 1;
+			GPIOA->ODR &= ~(buzzState << 8);
+		}
+		//send_UART("\n\rHello from Task3 2");
+		flag_uartController = ALLOW;
+		
+	}
+	
+	
+}
+
 
 /* USER CODE BEGIN 4 */
 

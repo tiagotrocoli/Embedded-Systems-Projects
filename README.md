@@ -38,11 +38,36 @@ File: Ultrasonic_sensor
 
 ### 2.2 &nbsp; ON-OFF temperature controller <br />
 
-Under construction
+<p align="center">
+<img src="/images/Project_Temperature_ON_OFF.jpg" height="60%" width="60%">  
+</p>
+
+It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's basically a academic project that uses multitasking approach to control and receives from peripheral devices.
+
+| Task         | Resume of the Function   
+| -------------|------------- 
+| Task 1       | It's the main function. It periodically reads the built-in temperature sensor and receives a setValue from Task 2. If the temperature is greater than the setValue, turn on the the LED. Otherwise, turn off.	If the temperature is greater than a pre-defined value, turn on the buzzer.
+| Task 2       | It's the UART controller. It sends a message to the PC, and reads the input (setValue) from the PC sending it to Task 1.
+| Task 3       | LCD controller. It displays in the LCD the temperature and setValue received from Task 1.
+| Task 4       | It turn on/off the buzzer. Task 1 sends that request.
+
+
+| Queue handle | Description   | Used by Tasks 
+| -------------|---------------|-------------
+| xUARTQueue   |  UART queue   | Task 1, 2	
+| xLCDQueue    |  LCD  queue   | Task 1, 3
+| xBuzzerQueue |  Buzzer queue | Task 1, 4
+
+File: Book_Project \ Project_21 
 
 ### 2.3 &nbsp; FreeRTOS Queue Processing  <br />
 
-Under construction
+Description under construction
+
+### 2.3 &nbsp; Frequency Measurement by TM4C123 of signal comming from Arduino <br />
+
+Description under construction
+
 
 It's based on courses:
 - Master microcontroller with embedded drivers.
