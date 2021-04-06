@@ -29,10 +29,12 @@ Description: To find the distance from the ultrasonic sensor to an object, do th
 
 | Terminology  | Function   
 | -------------|------------- 
-| TIMER0       | It's a delay timer. 
+| TIMER0       | It's a delay timer to measure the time of 10 microsecond pulses.	
 | TIMER1       | It's used to calculate the time between the rising and falling edge
 | PB4 pin      | It connects the TRIGGER.
 | PB6 pin      | It connects the ECCHO.
+
+File: Ultrasonic_sensor
 
 ### 2.2 &nbsp; ON-OFF temperature controller <br />
 
