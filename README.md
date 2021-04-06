@@ -39,7 +39,7 @@ File: Ultrasonic_sensor
 ### 2.2 &nbsp; ON-OFF temperature controller <br />
 
 <p align="center">
-<img src="/images/Project_Temperature_ON_OFF.jpg" height="60%" width="60%">  
+<img src="/images/Project_Temperature_ON_OFF.png" height="60%" width="60%">  
 </p>
 
 It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's basically a academic project that uses multitasking approach to control and receives from peripheral devices.
