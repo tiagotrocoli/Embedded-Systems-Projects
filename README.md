@@ -1,4 +1,4 @@
-# Embedded-Systems-Projects
+# 1. Embedded-Systems-Projects
 Projects and small projects of embedded systems using STM32F407xx or TM4C123.
 
 Bare metal programming projects involving:
@@ -17,9 +17,9 @@ FreeRTOS projects:
 It's based on the book:
 - ARM-Based Microcontroller Multitasking Projects Using the FreeRTOS
 
-# Description of main projects <br />
+# 2. Description of main projects <br />
 
-### 1.1 &nbsp; Distance measurement using TM4C123 and HC-SR04 ultrasonic sensor <br />
+### 2.1 &nbsp; Distance measurement using TM4C123 and HC-SR04 ultrasonic sensor <br />
 
 <p align="center">
 <img src="/images/HC-SR04-Ultrasonic-Sensor-Pinout-diagram-768x546.jpg" height="60%" width="60%">  
@@ -34,11 +34,11 @@ Description: To find the distance from the ultrasonic sensor to an object, do th
 | PB4 pin      | It connects the TRIGGER.
 | PB6 pin      | It connects the ECCHO.
 
-### 1.2 &nbsp; ON-OFF temperature controller <br />
+### 2.2 &nbsp; ON-OFF temperature controller <br />
 
 Under construction
 
-### 1.3 &nbsp; FreeRTOS Queue Processing  <br />
+### 2.3 &nbsp; FreeRTOS Queue Processing  <br />
 
 Under construction
 
