@@ -42,7 +42,7 @@ File: Ultrasonic_sensor
 <img src="/images/Project_Temperature_ON_OFF.png" height="60%" width="60%">  
 </p>
 
-It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's an academic project that uses multitasking approach to control from peripheral devices using FreeRTOS tools.
+It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's an academic project that uses multitasking approach to control peripheral devices using real time operating systems (FreeRTOS).
 
 | Task         | Resume of the Function   
 | -------------|------------- 
