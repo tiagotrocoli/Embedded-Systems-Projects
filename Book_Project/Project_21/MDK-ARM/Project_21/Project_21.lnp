@@ -1,5 +1,6 @@
 --cpu=Cortex-M4.fp.sp
 "project_21\startup_stm32f407xx.o"
+"project_21\glcd_st7735.o"
 "project_21\main.o"
 "project_21\freertos.o"
 "project_21\stm32f4xx_it.o"
@@ -17,6 +18,7 @@
 "project_21\stm32f4xx_hal_cortex.o"
 "project_21\stm32f4xx_hal.o"
 "project_21\stm32f4xx_hal_exti.o"
+"project_21\stm32f4xx_hal_spi.o"
 "project_21\stm32f4xx_hal_tim.o"
 "project_21\stm32f4xx_hal_tim_ex.o"
 "project_21\stm32f4xx_hal_uart.o"

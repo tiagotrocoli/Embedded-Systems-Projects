@@ -28,6 +28,7 @@ project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 project_21\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
@@ -43,5 +44,6 @@ project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 project_21\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+project_21\main.o: ../Core/Src/GLCD_ST7735.h
 project_21\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 project_21\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

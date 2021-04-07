@@ -21,6 +21,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "task.h"
+#include "GLCD_ST7735.h"
 #include <string.h>
 #include <stdio.h>
 
@@ -38,7 +39,8 @@ TaskHandle_t task4 = NULL;
 QueueHandle_t xUARTQueue;
 QueueHandle_t xBuzzerQueue;
 
-uint8_t flag_uartController = ALLOW;
+uint8_t flag_uartController_1 = ALLOW;
+uint8_t flag_uartController_2 = ALLOW;
 
 /* USER CODE BEGIN PV */
 
@@ -65,6 +67,7 @@ int main(void){
 	xTaskCreate(mainTask, "Main_Task", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task1);
 	xTaskCreate(uartController, "uartController", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task2);
 	xTaskCreate(buzzerController, "buzzerController", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task3);
+	xTaskCreate(lcdController, "lcdController", 2*configMINIMAL_STACK_SIZE, NULL, 5, &task4);
 	
 	xUARTQueue   = xQueueCreate(LENGHT_xUARTQueue, sizeof(uint8_t));
 	xBuzzerQueue = xQueueCreate(LENGHT_xBuzzerQueue, sizeof(uint8_t));
@@ -228,7 +231,8 @@ void mainTask(void *param){
 		}
 		// sent buzzer state to buzzerController
 		xQueueSend(xBuzzerQueue, &buzzState, portMAX_DELAY);
-		flag_uartController = WAIT;
+		flag_uartController_1 = WAIT;
+		flag_uartController_2 = WAIT;
 		
 	}
 	
@@ -242,7 +246,7 @@ void uartController(void *param){
 	while(1){
 		
 		// if it is allow to run...
-		if(flag_uartController == ALLOW){
+		if(flag_uartController_1 == ALLOW && flag_uartController_2 == ALLOW){
 		
 			// wait the user to provide temperature setPoint (can change delay to not wait user...)
 			send_UART("\r\nEnter Temperature SetPoint (degrees): ");
@@ -254,13 +258,9 @@ void uartController(void *param){
 			
 			// send the new setPoint to mainTask
 			xQueueSend(xUARTQueue, &int_setPoint, portMAX_DELAY);
-			// force changing the task 
-			taskYIELD();
 		}
-		// otherwise, change to task buzzerController
-		else{
-			taskYIELD();
-		}
+		// change to task buzzerController or lcdController
+		taskYIELD();
 	}
 	
 }
@@ -287,13 +287,32 @@ void buzzerController(void *param){
 			GPIOA->ODR &= ~(buzzState << 8);
 		}
 		//send_UART("\n\rHello from Task3 2");
-		flag_uartController = ALLOW;
+		flag_uartController_1 = ALLOW;
 		
 	}
 	
 	
 }
 
+void lcdController(void *param){
+	
+	ST7735_Init();
+	char data[24];
+	double temperature;
+	uint8_t int_setPoint;
+	//ST7735_DrawString(0, 0, "Hello LCD!", GREEN); 
+		
+	while(1){
+
+		sprintf(data, "Temperature: %lf", temperature);
+		ST7735_DrawString(0,0,data, GREEN);
+		sprintf(data, "Set point: %d", int_setPoint);
+		ST7735_DrawString(8,0,data, GREEN);
+		flag_uartController_2 = ALLOW;
+		
+	}
+	
+}
 
 /* USER CODE BEGIN 4 */
 
@@ -350,3 +369,4 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
