@@ -22,7 +22,7 @@ It's based on the book:
 ### 2.1 &nbsp; ON-OFF temperature controller <br />
 
 <p align="center">
-<img src="/images/Project_Temperature_ON_OFF.png" height="100%" width="100%">  
+<img src="/images/Project_Temperature_ON_OFF.png" height="60%" width="60%">  
 </p>
 
 It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's an academic project that uses multitasking approach to control peripheral devices using real time operating systems (FreeRTOS).
@@ -58,7 +58,7 @@ Project's file: Book_Project \ Project_21
 Description: To find the distance from the ultrasonic sensor to an object, do the following. TM4C123 produces a 10 microsecond pulse to trigger the pin (PB4) of the sensor. Thus, the sensor produces 8 pulses of ultra-sound waves and each pulse has 40Khz of frequency. As soon as all eight pulses are transmitted through the air, the echo pin goes HIGH. In other words, the output echo pin makes transition from an active LOW to active HIGH (rising edge). The echo pin remains HIGH until the sound wave reaches the sensor after hitting an object. After the sound wave reaches the sensor, the echo pin goes LOW (falling edge). Thus, by measuring the time between rising edge and falling edge of the echo pin, it’s possible to find the distance of the sensor to an object.
 
 <p align="center">
-<img src="/images/Ultrasonic_description.png" height="60%" width="60%">  
+<img src="/images/Ultrasonic_description.png" height="100%" width="100%">  
 </p>
 
 | Soft. Tools  | Function   
