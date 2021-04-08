@@ -46,7 +46,7 @@ It is a project based on the book "ARM-Based Microcontroller Multitasking Projec
 </p>
 This image shows this project, however, I didn't use a buzzer module since I didn't have it. So, instead I used a LED. 
 
-File: Book_Project \ Project_21 
+Project's file: Book_Project \ Project_21 
 
 
 ### 2.2 &nbsp; Distance measurement using TM4C123 and HC-SR04 ultrasonic sensor <br />
@@ -64,7 +64,7 @@ Description: To find the distance from the ultrasonic sensor to an object, do th
 | PB4 pin      | It connects the TRIGGER.
 | PB6 pin      | It connects the ECCHO.
 
-File: Ultrasonic_sensor
+Project's file: Ultrasonic_sensor
 
 ### 2.3 &nbsp; FreeRTOS Queue Processing  <br />
 
