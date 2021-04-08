@@ -22,7 +22,7 @@ It's based on the book:
 ### 2.1 &nbsp; ON-OFF temperature controller <br />
 
 <p align="center">
-<img src="/images/Project_Temperature_ON_OFF.png" height="60%" width="60%">  
+<img src="/images/Project_Temperature_ON_OFF.png" height="100%" width="100%">  
 </p>
 
 It is a project based on the book "ARM-Based Microcontroller Multitasking Projects: Using the FreeRTOS Multitasking Kernel". It's an academic project that uses multitasking approach to control peripheral devices using real time operating systems (FreeRTOS).
