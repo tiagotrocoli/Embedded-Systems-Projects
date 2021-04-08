@@ -44,7 +44,7 @@ It is a project based on the book "ARM-Based Microcontroller Multitasking Projec
 <p align="center">
 <img src="/images/project_21.jpg" height="60%" width="60%">  
 </p>
-This image shows this project, however, I didn't use a buzzer module since I didn't have it. So, instead I used a LED. 
+This image shows this project, however, I didn't use a buzzer module since I didn't have it. So, instead, I used a LED. The image doesn't show clearly the LCD screen, it displays "Temperature: 51" and "Setpoint: 70".
 
 Project's file: Book_Project \ Project_21 
 
