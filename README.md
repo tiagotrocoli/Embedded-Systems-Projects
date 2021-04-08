@@ -41,6 +41,11 @@ It is a project based on the book "ARM-Based Microcontroller Multitasking Projec
 | xLCDQueue    |  LCD  queue   | Task 1, 3
 | xBuzzerQueue |  Buzzer queue | Task 1, 4
 
+<p align="center">
+<img src="/images/project_21.jpg" height="60%" width="60%">  
+</p>
+This image shows this project, however, I didn't use a buzzer module since I didn't have it. So, instead I used a LED. 
+
 File: Book_Project \ Project_21 
 
 

@@ -30,6 +30,7 @@
 
 #define LENGHT_xUARTQueue		1
 #define LENGHT_xBuzzerQueue	1
+#define LENGHT_xLCDQueue	2
 
 UART_HandleTypeDef huart4;
 TaskHandle_t task1 = NULL;
@@ -38,6 +39,7 @@ TaskHandle_t task3 = NULL;
 TaskHandle_t task4 = NULL;
 QueueHandle_t xUARTQueue;
 QueueHandle_t xBuzzerQueue;
+QueueHandle_t xLCDQueue;
 
 uint8_t flag_uartController_1 = ALLOW;
 uint8_t flag_uartController_2 = ALLOW;
@@ -71,6 +73,7 @@ int main(void){
 	
 	xUARTQueue   = xQueueCreate(LENGHT_xUARTQueue, sizeof(uint8_t));
 	xBuzzerQueue = xQueueCreate(LENGHT_xBuzzerQueue, sizeof(uint8_t));
+	xLCDQueue		 = xQueueCreate(LENGHT_xLCDQueue, sizeof(uint8_t));
 	
   xPortStartScheduler();
 	
@@ -207,10 +210,7 @@ void send_UART(char data[]){
 
 void mainTask(void *param){
 	
-	double celcius;
-	char data[30];
-	uint8_t SetPoint = 30;
-	uint8_t buzzState = 0;
+	uint8_t SetPoint = 30, buzzState = 0, temperature;
 	
 	init_ADC1();
 	
@@ -219,18 +219,23 @@ void mainTask(void *param){
 		// wait uartController to receive setPoint
 		xQueueReceive(xUARTQueue, &SetPoint, portMAX_DELAY);
 		
-		// get the CPU temperature and send to PC
-		celcius = getValueFromADC1();
-		sprintf(data, "\r\nTemperature: %f", celcius);
-		send_UART(data);
+		// get the CPU temperature
+		temperature = (uint8_t) getValueFromADC1();
 		
-		if (SetPoint > celcius){
+		if (SetPoint > temperature){
 			buzzState = 1;
 		}else{
 			buzzState = 0;
 		}
-		// sent buzzer state to buzzerController
+		
+		// send buzzer state to buzzerController
 		xQueueSend(xBuzzerQueue, &buzzState, portMAX_DELAY);
+		
+		// send temperature and setPoint to LCD Controller
+		xQueueSend( xLCDQueue , &temperature,portMAX_DELAY);
+		xQueueSend( xLCDQueue , &SetPoint, portMAX_DELAY);
+		
+		// "block" uartController
 		flag_uartController_1 = WAIT;
 		flag_uartController_2 = WAIT;
 		
@@ -245,10 +250,10 @@ void uartController(void *param){
 	
 	while(1){
 		
-		// if it is allow to run...
+		// uartController only runs after the execution of buzzerController and uartController 
 		if(flag_uartController_1 == ALLOW && flag_uartController_2 == ALLOW){
 		
-			// wait the user to provide temperature setPoint (can change delay to not wait user...)
+			// wait the user to provide temperature setPoint
 			send_UART("\r\nEnter Temperature SetPoint (degrees): ");
 			HAL_UART_Receive(&huart4, char_setPoint,2,portMAX_DELAY );
 			send_UART("\r\nTemperature SetPoint changed...");
@@ -276,7 +281,7 @@ void buzzerController(void *param){
 	GPIOA->ODR &= ~(1U << 8);
 	
 	while(1){
-		//send_UART("\n\rHello from Task3 1");
+		
 		// wait to receive buzzer state from mainTask
 		xQueueReceive(xBuzzerQueue,&buzzState,portMAX_DELAY);
 		// set buzzer state (PA8) state
@@ -286,7 +291,8 @@ void buzzerController(void *param){
 			buzzState = 1;
 			GPIOA->ODR &= ~(buzzState << 8);
 		}
-		//send_UART("\n\rHello from Task3 2");
+		
+		// allow uartController to run
 		flag_uartController_1 = ALLOW;
 		
 	}
@@ -298,16 +304,22 @@ void lcdController(void *param){
 	
 	ST7735_Init();
 	char data[24];
-	double temperature;
+	uint8_t temperature;
 	uint8_t int_setPoint;
-	//ST7735_DrawString(0, 0, "Hello LCD!", GREEN); 
 		
 	while(1){
-
-		sprintf(data, "Temperature: %lf", temperature);
+		
+		// wait to receive the temperature and setPoint from Main Task
+		xQueueReceive(xLCDQueue,&temperature,portMAX_DELAY);
+		xQueueReceive(xLCDQueue,&int_setPoint,portMAX_DELAY);
+		
+		// print the temperature and setPoint in the LCD
+		sprintf(data, "Temperature: %d", temperature);
 		ST7735_DrawString(0,0,data, GREEN);
 		sprintf(data, "Set point: %d", int_setPoint);
-		ST7735_DrawString(8,0,data, GREEN);
+		ST7735_DrawString(0,8,data, GREEN);
+		
+		// allow uartController to run
 		flag_uartController_2 = ALLOW;
 		
 	}

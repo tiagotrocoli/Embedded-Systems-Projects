@@ -387,7 +387,7 @@ uint16_t ST7735_Color565(uint8_t r, uint8_t g, uint8_t b) {
 
 uint32_t ST7735_DrawString(uint16_t x, uint16_t y, char *pt, int16_t textColor){
   uint32_t count = 0;
-  if(y>15) return 0;
+  if(y>15) return 0;	
   while(*pt){
     ST7735_DrawCharS(x*6, y*10, *pt, textColor, BLACK, 1);
     pt++;
