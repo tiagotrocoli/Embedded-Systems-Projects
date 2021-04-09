@@ -96,7 +96,7 @@ The application has 6 commands that the user can send from PC via UART to STM32F
 | LED_READ_STATUS    | read status of a LED
 | RTC_PRINT_DATETIME | print datetime
 
-
+under construction...
 
 ### 2.4 &nbsp; Frequency Measurement by TM4C123 of signal comming from Arduino <br />
 
