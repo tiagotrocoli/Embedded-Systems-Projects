@@ -65,9 +65,14 @@ Description: To find the distance from the ultrasonic sensor to an object, do th
 | -------------|------------- 
 | TIMER0       | It's a delay timer to measure the time of 10 microsecond pulses.	
 | TIMER1       | It's used to calculate the time between the rising and falling edge
+| UART5        | It is used to connect TM4C123 to PC sending the distance value.
+
+| Pinout       | Function   
+| -------------|------------- 	
 | PB4 pin      | It connects the TRIGGER.
 | PB6 pin      | It connects the ECCHO.
-
+| PE4 pin      | UART5 RX
+| PE5 pin      | UART5 TX
 
 Project's file: Ultrasonic_sensor
 
@@ -75,9 +80,25 @@ Project's file: Ultrasonic_sensor
 
 Description under construction
 
-### 2.3 &nbsp; Frequency Measurement by TM4C123 of signal comming from Arduino <br />
+### 2.4 &nbsp; Frequency Measurement by TM4C123 of signal comming from Arduino <br />
 
-Description under construction
+<p align="center">
+<img src="/images/frequency_measrement.png" height="80%" width="80%">  
+</p>
+
+In this small project the arduino sends a signal to TM4C123 and it calculate the frequency of it sending it to PV via UART. To do, so it measure the time difference 
+between the rising and falling edge using TIMER0 module, that is the period. The frequecy is just the inverse of the period.
+
+
+| Soft. Tools  | Function   
+| -------------|------------- 	
+| TIMER0       | It's used to calculate the time between rising and falling edge
+| UART5        | It is used to connect TM4C123 to the PC.
+
+| Pinout       | Function   
+| -------------|------------- 	
+| PE4 pin      | UART5 RX
+| PE5 pin      | UART5 TX
 
 
 It's based on courses:
