@@ -41,6 +41,13 @@ It is a project based on the book "ARM-Based Microcontroller Multitasking Projec
 | xLCDQueue    |  LCD  queue   | Task 1, 3
 | xBuzzerQueue |  Buzzer queue | Task 1, 4
 
+
+| Soft. Tools  | Function   
+| -------------|------------- 
+| UART4	       | It's used to communicate STM32F407 with PC
+| ADC1         | It's used to measure the built-in temperature
+| SPI2         | It's used to communicate STM32F407 with LCD
+
 <p align="center">
 <img src="/images/project_21.jpg" height="60%" width="60%">  
 </p>
@@ -78,7 +85,18 @@ Project's file: Ultrasonic_sensor
 
 ### 2.3 &nbsp; FreeRTOS Queue Processing  <br />
 
-Description under construction
+The application has 6 commands that the user can send from PC via UART to STM32F407:
+
+| Command            | Function   
+| -------------------|-------------
+|  LED_ON            | turn on a LED
+|  LED_OFF           | turn off a LED
+| LED_TOGGLE         | turn on toggle a LED
+| LED_TOGGLE_OFF     | turn off toggle a LED
+| LED_READ_STATUS    | read status of a LED
+| RTC_PRINT_DATETIME | print datetime
+
+
 
 ### 2.4 &nbsp; Frequency Measurement by TM4C123 of signal comming from Arduino <br />
 
@@ -100,6 +118,7 @@ between the rising and falling edge using TIMER0 module, that is the period. The
 | PE4 pin      | UART5 RX
 | PE5 pin      | UART5 TX
 
+File: Frequency_measurement
 
 It's based on courses:
 - Master microcontroller with embedded drivers.
