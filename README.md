@@ -14,9 +14,6 @@ Bare metal programming projects involving:
 FreeRTOS projects:
 - Multitasking projects that use FreeRTOS, CMSIS and peripheral of STM32F407xx boards.
 
-It's based on the book:
-- ARM-Based Microcontroller Multitasking Projects Using the FreeRTOS
-
 # 2. Description of main projects <br />
 
 ### 2.1 &nbsp; ON-OFF temperature controller <br />
@@ -119,6 +116,10 @@ between the rising and falling edge using TIMER0 module, that is the period. The
 | PE5 pin      | UART5 TX
 
 File: Frequency_measurement
+
+
+It's based on the book:
+- ARM-Based Microcontroller Multitasking Projects Using the FreeRTOS
 
 It's based on courses:
 - Master microcontroller with embedded drivers.
