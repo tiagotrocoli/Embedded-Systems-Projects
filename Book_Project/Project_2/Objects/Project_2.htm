@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Project_2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Project_2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Thu Apr  1 19:22:54 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Tue Jun  8 20:00:48 2021
 <BR><P>
 <H3>Maximum Stack Usage =        256 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -704,7 +704,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_postsh_1
 </UL>
 
-<P><STRONG><a name="[74]"></a>main</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, main.o(.text.main))
+<P><STRONG><a name="[74]"></a>main</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = main &rArr; vTaskStartScheduler &rArr; xTimerCreateTimerTask &rArr; prvCheckForValidListAndQueue &rArr; xQueueGenericCreateStatic &rArr; prvInitialiseNewQueue &rArr; xQueueGenericReset &rArr; xTaskRemoveFromEventList
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
@@ -733,14 +733,14 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
 </UL>
 
-<P><STRONG><a name="[5d]"></a>task1</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, main.o(.text.task1))
+<P><STRONG><a name="[5d]"></a>task1</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, main.o(.text.task1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = task1 &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text.main)
 </UL>
-<P><STRONG><a name="[5e]"></a>task2</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, main.o(.text.task2))
+<P><STRONG><a name="[5e]"></a>task2</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, main.o(.text.task2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = task2 &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay

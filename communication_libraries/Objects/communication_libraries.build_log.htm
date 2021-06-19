@@ -17,23 +17,87 @@ Library Manager: ArmAr.exe V6.16
 Hex Converter:   FromElf.exe V6.16
 CPU DLL:         SARMCM3.DLL V5.34.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      UL2CM3.DLL V1.163.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
 C:\Users\Tiago\Documents\GitHub\Embedded-Systems-Projects\communication_libraries\communication_libraries.uvprojx
-Project File Date:  04/10/2021
+Project File Date:  05/15/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-assembling startup_stm32f407xx.s...
+main.c(18): warning: no previous extern declaration for non-static variable 'usr_msg' [-Wmissing-variable-declarations]
+char usr_msg[250]={0};
+     ^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char usr_msg[250]={0};
+^
+main.c(48): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        sprintf(usr_msg, "Acce: %0.2f, %0.2f, %0.2f \r\n", x, y, z);
+                        ~~~~~~~                                                  ^
+main.c(48): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        sprintf(usr_msg, "Acce: %0.2f, %0.2f, %0.2f \r\n", x, y, z);
+                        ~~~~~~~                                               ^
+main.c(48): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        sprintf(usr_msg, "Acce: %0.2f, %0.2f, %0.2f \r\n", x, y, z);
+                        ~~~~~~~                                            ^
+main.c(4): warning: In file included from...
+./TJ_MPU6050.h(20): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx\stm32f4xx_hal_conf.h(483): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_i2c.h(216): warning: padding struct 'I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;      /*!< I2C Error code                           */
+                             ^
+main.c(4): warning: In file included from...
+./TJ_MPU6050.h(20): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx\stm32f4xx_hal_conf.h(411): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+main.c(4): warning: In file included from...
+./TJ_MPU6050.h(20): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx\stm32f4xx_hal_conf.h(531): warning: In file included from...
+C:/Users/Tiago/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(172): warning: padding struct 'struct __UART_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t                 ErrorCode;        /*!< UART Error code                    */
+                                ^
+main.c(80): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        HAL_UART_Transmit(&huart5, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+        ~~~~~~~~~~~~~~~~~                          ^~~~~~~~~~~
+main.c(83): warning: function 'Error_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void Error_Handler(void){
+                        ^
+main.c(10): warning: no previous extern declaration for non-static variable 'huart5' [-Wmissing-variable-declarations]
+UART_HandleTypeDef huart5;
+                   ^
+main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+UART_HandleTypeDef huart5;
+^
+main.c(11): warning: no previous extern declaration for non-static variable 'hi2c1' [-Wmissing-variable-declarations]
+I2C_HandleTypeDef hi2c1;
+                  ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+I2C_HandleTypeDef hi2c1;
+^
+main.c(12): warning: no previous extern declaration for non-static variable 'myAccelScaled' [-Wmissing-variable-declarations]
+ScaledData_Def myAccelScaled, myGyroScaled;
+               ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ScaledData_Def myAccelScaled, myGyroScaled;
+^
+main.c(12): warning: no previous extern declaration for non-static variable 'myGyroScaled' [-Wmissing-variable-declarations]
+ScaledData_Def myAccelScaled, myGyroScaled;
+                              ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ScaledData_Def myAccelScaled, myGyroScaled;
+^
+13 warnings generated.
 compiling main.c...
-compiling i2c.c...
-compiling system_stm32f4xx.c...
 linking...
-Program Size: Code=380 RO-data=408 RW-data=0 ZI-data=1632  
-".\Objects\communication_libraries.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=9716 RO-data=648 RW-data=4 ZI-data=2152  
+".\Objects\communication_libraries.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,25 +108,92 @@ Package Vendor: ARM
    * Component: CORE Version: 5.4.0
 
 Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.12.0.pack
+                Keil.MDK-Middleware.7.12.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Buttons Version: 1.0.0
+
+Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
                 Keil.STM32F4xx_DFP.2.15.0
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Buttons Version: 1.0.0
+   * Component: Classic Version: 1.7.9
+   * Component: Common Version: 1.7.9
+   * Component: Cortex Version: 1.7.9
+   * Component: DMA Version: 1.7.9
+   * Component: GPIO Version: 1.7.9
+   * Component: I2C Version: 1.7.9
+   * Component: PWR Version: 1.7.9
+   * Component: RCC Version: 1.7.9
+   * Component: UART Version: 1.7.9
    * Component: Startup Version: 2.6.3
 
 <h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
   .\RTE\_Target_1
   C:\Users\Tiago\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.12.0\Board
   C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\Tiago\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc
 
 <h2>Collection of Component Files used:</h2>
 
+   * Component: ::Board Support:Buttons:1.0.0 (API)
+      Include file:  Board\Board_Buttons.h
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
    * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.32F469IDISCOVERY::Board Support:Buttons:1.0.0
+      Source file:   MDK\Boards\ST\32F469IDISCOVERY\Common\Buttons_32F469IDISCOVERY.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.7.9
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates\Src\main.c
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+
+   * Component: Keil::Device:STM32Cube HAL:UART:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
    * Component: Keil::Device:Startup:2.6.3
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
-      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
 Build Time Elapsed:  00:00:02
 </pre>
